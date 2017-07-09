@@ -1,0 +1,230 @@
+/* CSS Document for Screens */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300i,400,700,700i');
+
+body {
+    font-family: 'Roboto', sans-serif; 
+    font-size: 16px; 
+    font-weight: 300; 
+    color: #555; 
+    margin: 0; 
+    padding: 0;
+    background-color: #ddf0ff;
+}
+
+/* Places navigation behind page */
+nav.responsive_nav ul {z-index: 0;}
+.page {z-index: 1; background-image: url(../images/cork-wallet.jpg); position: absolute;}
+
+
+
+
+
+/* Text */
+
+h1 {margin: 0 0 1em 0; font-size: 2.3em; font-weight: 700;}
+h2 {margin: 0 0 0.5em 0; font-size: 1.6em; font-weight: 700; line-height: 1.1em;}
+h3 {margin: 0 0 0.5em 0; font-size: 1.3em; font-weight: 700;}
+h4 {margin: 0 0 1.5em 0; font-size: 1em; font-weight: 700;}
+
+p {margin: 0 0 1.5em 0}
+
+a {color: #007eff; }
+a:visited {color: #65b1ff; }
+
+
+/* Header */
+
+header {
+    background: linear-gradient(340deg, #60bad6 0%, #309ab6 100%);
+    height: 120px;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 2px 7px #888888;
+}
+
+nav ul {
+    list-style: none;
+    margin-left: 35%;
+    padding-top: 23px
+}
+
+header h1 {
+    float: left; 
+    margin: 33px 0 10px 30px; 
+    padding: 0 5px 5px 3px; 
+    font-weight: 100; 
+    font-family: 'Futura', sans-serif; 
+    border: solid #4090aa 1px;
+    color: #333f4f;
+}
+
+
+nav a{
+    float: left;
+    display: block;
+    color: #e7e7e7;
+    text-align: center;
+    padding: 24px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    width: 110px;
+}
+nav a:visited{color: #e7e7e7}
+nav a:hover {
+    text-shadow: 3px 3px #3880a5; 
+    color: #ffffff; 
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+}
+
+nav ul li a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+a.mylogo {color: #555555;}
+a.mylogo:visited {color: #555555;}
+
+/* Off screen navigation */
+
+#nav_button {position: absolute; clip: rect(0,0,0,0)}
+label[for="nav_button"]{
+    position: absolute;
+    display: none;
+    right: 60px;
+    top: 40px;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><rect width='30' height='6'/><rect y='24' width='30' height='6'/><rect y='12' width='30' height='6'/></svg>")
+}
+
+.page.nav_open {
+    right: 170px;
+}
+header.nav_open {
+    right: 170px;
+}
+
+/* Navigation bar minimized */
+
+header.minimize h1 {
+    margin-top: 16px;
+    font-size: 2.4em;
+    -webkit-transition: margin-top 0.3s, font-size 0.1s;
+    -moz-transition: all 0.3s, font-size 0.3s;
+    -ms-transition: all 0.3s, font-size 0.3s;
+    -o-transition: all 0.3s, font-size 0.3s;
+    transition: all 0.3s, font-size 0.3s;
+}
+header.minimize {
+    height: 68px; 
+    background: linear-gradient(340deg, rgba(96,186,214,0.96) 0%, rgba(48,154,182,0.96) 100%);
+    -webkit-transition: all 0.7s;
+    -moz-transition: all 0.7s;
+    -ms-transition: all 0.7s;
+    -o-transition: all 0.7s;
+    transition: all 0.7s;
+}
+header.minimize a {
+    font-size: .89em;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.2s;
+}
+header.minimize ul {
+
+    padding-top: 0;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+header.minimize label[for="nav_button"] {
+    top: 20px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+
+/* Content */
+
+#content {
+    width: 50%; 
+    margin-left: 15%; 
+    padding: 150px 10% 80px 10%; 
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 1px solid #cccc99;
+}
+
+
+/* Footer */
+
+footer {
+    margin-top: 100px;
+    color: #99a4a4;
+    font-size: .8em;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 1000px) {
+    nav ul {
+        margin-left: 28%;
+    }
+}
+
+
+
+@media screen and (max-width: 875px) {
+    nav ul {
+        display: none;
+    }
+    nav.responsive_nav ul {
+        position: fixed;
+        display: block;
+        height: 125%;
+        top:-19px;
+        right: 0;
+        height: 100%;
+        background-color: black;
+        z-index: 1;
+    }
+    label[for="nav_button"] {
+        display: block; 
+        -webkit-transition: display 0.5s;
+        -moz-transition: display 0.5s;
+        -ms-transition: display 0.5s;
+        -o-transition: display 0.5s;
+        transition: display 0.5s;
+    }
+    nav.responsive_nav ul a {width: 107px; padding:30px;}
+    nav.responsive_nav ul a:hover {background: linear-gradient(340deg, rgba(130,216,254,0.35) 0%, rgba(48,154,182,0.35) 100%); text-shadow: none; color: #309ab6}
+    
+    #content {
+        width: 70%; 
+        margin-left: 5%;  
+    }
+}
+
+@media screen and (max-width: 560px) {
+    #content {
+        width: 74%; 
+        margin-left: .75%;  
+        padding: 150px 12% 80px 12%;   
+    }
+}
