@@ -1,9 +1,8 @@
-/*JavaScript that adds a class to the header element; slightly minimizes the header bar upon 
-scrolling down 500pixels. It also makes the background color slightly transparrent */
+/*JavaScript that adds a class to the header element; slightly minimizes the header bar upon scrolling down 500pixels. It also makes the background color slightly transparrent */
 
 function init() {
     window.addEventListener('scroll', function () {
-        if (pageYOffset > 500) {
+        if (pageYOffset > 20) {
             document.getElementById("pagehead").classList.add('minimize');
         } else {
             if (document.getElementById("pagehead").classList.contains('minimize')) {
@@ -13,9 +12,7 @@ function init() {
     });
 }
 
-/*JavaScript that adds a class to the header and fullpage elements; offsets them by 
-170pixels to display the offscreen navigation underneath upon clicking the navigation 
-button - Three lines, which appear when the screen width is less than 875pixels  */
+/*JavaScript that adds a class to the header and fullpage elements; offsets them by 170pixels to display the offscreen navigation underneath upon clicking the navigation button - Three lines, which appear when the screen width is less than 875pixels  */
 
 function onClickHandler(checkbox) {
     if (checkbox.checked) {
