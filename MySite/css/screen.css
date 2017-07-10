@@ -14,7 +14,7 @@ body {
 
 /* Places navigation behind page */
 nav.responsive_nav ul {z-index: 0;}
-.page {min-height: 90%; min-width: 100%; z-index: 1; background-image: url(../images/cork-wallet.jpg); position: absolute;}
+.page {min-height: 100%; min-width: 100%; z-index: 1; background-image: url(../images/cork-wallet.jpg); position: absolute;}
 
 
 
@@ -56,8 +56,8 @@ header h1 {
     float: left; 
     margin: 33px 0 10px 30px; 
     padding: 0 5px 5px 3px; 
-    font-weight: 100; 
-    font-family: 'Futura', sans-serif; 
+    font-weight: 400; 
+    font-family: sans-serif; 
     border: solid #4090aa 1px;
     color: #274a5f;
 }
@@ -82,7 +82,6 @@ nav a:hover {
     -ms-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
-}
 }
 
 nav ul li a {
@@ -169,7 +168,7 @@ header.minimize label[for="nav_button"] {
     min-height: 460px;
     width: 50%; 
     margin-left: 15%; 
-    padding: 90px 10% 80px 10%; 
+    padding: 90px 10% 130px 10%; 
     background-color: rgba(255, 255, 255, 0.6);
     border: 1px solid #cccc99;
 }
